@@ -1,0 +1,14 @@
+After storage created through hdfs,how to use
+
+hadoop namenode -format
+iptables -F
+hadoop-daemon.sh start namenode
+jps // to confirm
+hadoop dfsadmin -report
+
+for slaves
+hadoop-daemon.sh
+
+hadoop fs -ls//to check how much data
+
+hadoop fs -touch/my.txt 

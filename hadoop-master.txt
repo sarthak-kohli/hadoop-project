@@ -1,0 +1,23 @@
+hadoop master node
+
+firstly install hadoop
+java jdk
+
+rpm -ivh jdk..........
+set path & make it permanent
+hadoop version
+
+cd /etc/hadoop
+gedit hdfs-site.xml
+<property>
+<name>dfs.name.dir</name>
+<value>/nn</value>   //nn is directory for storage for masternode
+</property>
+
+gedit core-site.xml
+<property>
+<name>fs.default.name</name>
+<value>http://192.168.43.20:9001</value> //so that master knows about its node.
+</property>
+
+
